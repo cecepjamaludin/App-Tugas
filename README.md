@@ -3,7 +3,7 @@
 **Notice**: This component is designed for pc, **not recommended for use on the mobile side**.
 
 ## Screenshot
-![screenshot](screenshot/screenshoot1.png)
+<img src="./screenshot/screeshoot1" width="240px" height="480px">
 
 ## Brower compatibility
 IE10+
