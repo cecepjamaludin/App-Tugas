@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container { q
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      width: 100%;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      grid-template-columns: max-content;
+      flex-wrap: wrap;
+      align-content: center;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      flex: 200px;
+      text-align: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        margin: 0; 
+      }
+      .card {
+        flex: 100px;
+      }
+    }
+  </style>
+  <title>Responsive Menu</title>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Menu</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="img/image-04.png" onclick="location.href='suhu.html';" alt="Card 1">
+      <h2>Suhu</h2>
+    </div>
+
+    <div class="card">
+      <img src="img/image-04.png" alt="Card 2">
+      <h2>Jarak</h2>
+    </div>
+
+    <div class="card">
+      <img src="img/image-04.png" alt="Card 3">
+      <h2>Massa</h2>
+    </div>
+    <div class="card">
+      <img src="img/image-04.png" alt="Card 4">
+      <h2>Waktu</h2>
+    </div>
+  </main>
+</div>
+
+<script>
+  // JavaScript for responsiveness (optional)
+  window.addEventListener('resize', () => {
+    document.body.style.cssText = `
+      --vh: ${window.innerHeight * 0.01}px;
+    `;
+  });
+</script>
+
+</body>
+</html>

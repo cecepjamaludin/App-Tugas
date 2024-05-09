@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	margin: 0;
+  padding: 0;
+}
+
+.intro-screen {
+	background-color: #fdfdfd;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.intro-title {
+	font-size: 2.5rem;
+	margin-bottom: .5rem;
+  color: #30363f;
+}
+
+.intro-subtitle {
+	font-size: 2rem;
+	margin-bottom: 1.2rem;
+  color: #545F71;
+}
+
+.intro-button {
+  background-color: #020202;
+;
+  color: #ffffff;
+  border: none;
+  padding: .7rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.intro-button:hover {
+	background-color: #ffffff;
+  color: #020202;
+  border: solid 1px #020202;
+}
+
+.row {
+	margin-top: 80px;
+}
+
+.card {
+	background-color: #fff;
+	border: none;
+}
+
+.text-center .card-img {
+	width: 120px;
+	margin-top: 20px;
+}
+
+.text-center h2 {
+	font-size: 32px;
+	font-weight: 700;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #545F71;
+}
+
+.text-center h3 {
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	color : #545F71
+}
+
+.text-center span {
+	font-weight: 700;
+}
+
+#loginForm {
+	margin: 0 20px;
+}
+
+.form-group label {
+	font-size: 16px;
+}
+
+.form-group input {
+	height: 45px;
+}
+
+.form-group button {
+	background-color: #020202;
+	color: #ffffff;
+	height: 50px;
+	margin-top: 40px;
+	font-size: 16px;
+}
+
+.form-group a {
+	color: #545F71;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.forgot-password {
+	font-size: 0.8rem;
+	color: #6c757d;
+}
+
+.form-group select {
+	height: 45px;
+}
+
+.text-center h1 {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: #545F71;
+}
+
+.submit {
+	margin-left: 20px;
+	height: 45px;
+	width: 300px;
+	background: white;
+	border-radius: 5px;
+	font-weight: 700;
+}
+
+
+
+@media (max-width: 767.98px) {
+  .intro-screen img {
+    width: 159px;
+    height: 167px;
+  }
+
+	.intro-title {
+		font-size: 1.7rem;
+	}
+
+	.intro-subtitle {
+		font-size: 1.2rem;
+	}
+
+	.intro-button {
+		padding: 0.5rem 1rem;
+		font-size: 0.8rem;
+	}
+
+  .card {
+		border-radius: 0;
+	}
+
+
+	#conversion {
+    width: 100%;
+  }
+  #temperature {
+    width: 100%;
+  }
+  #result {
+    margin-top: 10px;
+  }
+}
